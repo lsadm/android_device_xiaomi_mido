@@ -18,6 +18,10 @@ DEVICE_PATH := device/xiaomi/mido
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
+# Lineage Hardware
+JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
+
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
